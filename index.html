@@ -39,10 +39,19 @@
 <body>
     <h1>Hello Traveler!</h1>
     <p>Take me with you in your internet browsing!</p>
-    <img src="Frog.png" alt="A cute frog">
+    <img src="Frog.png" alt="A cute frog" id="frog" style="cursor: pointer;">
+    <audio id="frog-sound" src="hey_listen.mp3" preload="auto"></audio>
     <!-- Add a scrollable div to the body -->
     <div class="scrolling-area">
         <!-- Your content here -->
     </div>
+
+    <script>
+        document.getElementById('frog').addEventListener('click', function() {
+            var sound = document.getElementById('frog-sound');
+            sound.currentTime = 0;
+            sound.play();
+        });
+    </script>
 </body>
 </html>
