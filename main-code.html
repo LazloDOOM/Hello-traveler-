@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Traveler!</title>
+    <style>
+        /* Set body font and background, and center content
+           using flexbox instead of position:absolute so the
+           page can scroll normally when content overflows */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Add rounded corners to the body element */
+        body {
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+
+        /* Frog image size */
+        img {
+            margin-bottom: 20px;
+            width: 35%;
+            border-radius: 15px;
+        }
+
+        .scrolling-area {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Traveler!</h1>
+    <p>Take me with you in your internet browsing!</p>
+    <img src="Frog.png" alt="A cute frog">
+    <!-- Add a scrollable div to the body -->
+    <div class="scrolling-area">
+        <!-- Your content here -->
+    </div>
+</body>
+</html>
